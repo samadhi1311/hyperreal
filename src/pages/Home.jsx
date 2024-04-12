@@ -1,31 +1,22 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { SiInstagram, SiGithub, SiDribbble } from 'react-icons/si';
 
 import './stylesheets/Home.css';
 
 export default function Home() {
-	const [hue, setHue] = useState(0);
-
-	document.addEventListener('mouseup', function (e) {
-		let mouseX = e.clientX;
-		let mouseY = e.clientY;
-
-		setHue(Math.atan2(mouseX, mouseY) * (180 / Math.PI));
-	});
-
 	return (
 		<main className='home-main-container'>
 			<div className='hero-image' style={{ transition: 'filter 300ms ease' }}>
 				<div className='social-media'>
 					<Link>
-						<SiInstagram className='social-icon' size={32} />
+						<i className='bx bxl-dribbble bx-md social-icon'></i>
 					</Link>
+
 					<Link>
-						<SiGithub className='social-icon' size={32} />
+						<i className='bx bxl-instagram bx-md social-icon'></i>
 					</Link>
+
 					<Link>
-						<SiDribbble className='social-icon' size={32} />
+						<i className='bx bxl-github bx-md social-icon'></i>
 					</Link>
 				</div>
 			</div>
@@ -34,10 +25,12 @@ export default function Home() {
 					<h1 className=''>hyperreal</h1>
 				</span>
 				<span className='right'>
-					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis eius, illum doloremque corporis sequi veritatis ea asperiores placeat facere atque totam culpa distinctio cum
-						libero explicabo animi quisquam porro architecto.
+					<p className='sub-heading'>
+						Elevating Online Presence,
+						<br />
+						One Pixel at a Time:
 					</p>
+					<p className='paragraph'>Crafting Customized Solutions to Boost Your Brand's Visibility and Success in the Digital Realm</p>
 					<Link to='/work'>
 						<button className='button'>
 							Our work

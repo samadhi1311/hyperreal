@@ -1,7 +1,10 @@
 import { Link } from 'react-router-dom';
 import './Navigation.css';
+import { useState } from 'react';
 
 export default function Navigation() {
+	const [isOpen, setIsOpen] = useState(false);
+
 	return (
 		<header>
 			<nav className='navigation'>
@@ -32,6 +35,10 @@ export default function Navigation() {
 							</div>
 						</button>
 					</Link>
+				</span>
+
+				<span className='hamburger-menu'>
+					<i className='bx bx-menu-alt-right bx-md'></i>
 				</span>
 			</nav>
 		</header>
