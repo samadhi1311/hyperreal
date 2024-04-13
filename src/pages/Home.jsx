@@ -31,7 +31,7 @@ export default function Home() {
 						One Pixel at a Time:
 					</p>
 					<p className='paragraph'>Crafting Customized Solutions to Boost Your Brand's Visibility and Success in the Digital Realm</p>
-					<Link to='/work'>
+					<Link to='/hyperreal/work'>
 						<button className='button'>
 							Our work
 							<div className='hoverEffect'>

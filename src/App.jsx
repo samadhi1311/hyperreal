@@ -11,10 +11,10 @@ function App() {
 			<Navigation />
 
 			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/services' element={<Services />} />
-				<Route path='/work' element={<Work />} />
-				<Route path='/about' element={<About />} />
+				<Route path='/hyperreal' element={<Home />} />
+				<Route path='/hyperreal/services' element={<Services />} />
+				<Route path='/hyperreal/work' element={<Work />} />
+				<Route path='/hyperreal/about' element={<About />} />
 			</Routes>
 		</BrowserRouter>
 	);
