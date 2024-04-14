@@ -1,16 +1,23 @@
-import { Link } from 'react-router-dom';
-import './Navigation.css';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
+import './Navigation.css';
 
 export default function Navigation() {
 	const [isOpen, setIsOpen] = useState(false);
 
+	const animation = {
+		default: {
+			opacity: 1,
+		},
+	};
+
 	return (
-		<header>
+		<motion.header initial={{ opacity: 0, y: -100 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 2, ease: 'easeInOut', type: 'spring', stiffness: 50, damping: 20 }}>
 			<nav className='navigation'>
 				<span className='nav-logo'>
 					<Link to='/hyperreal' className='nav-link'>
-						<h3>hyperreal</h3>
+						<motion.h3>hyperreal</motion.h3>
 					</Link>
 				</span>
 
@@ -41,6 +48,6 @@ export default function Navigation() {
 					<i className='bx bx-menu-alt-right bx-md'></i>
 				</span>
 			</nav>
-		</header>
+		</motion.header>
 	);
 }

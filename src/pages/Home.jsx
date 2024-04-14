@@ -1,11 +1,12 @@
 import { Link } from 'react-router-dom';
-
+import { motion } from 'framer-motion';
+import { animations } from '../components/animations';
 import './stylesheets/Home.css';
 
 export default function Home() {
 	return (
-		<main className='home-main-container'>
-			<div className='hero-image' style={{ transition: 'filter 300ms ease' }}>
+		<motion.main className='home-main-container' variants={animations.container} initial='hidden' animate='visible' exit='exit'>
+			<motion.div className='hero-image' variants={animations.heroImage} initial='hidden' animate='fadeIn'>
 				<div className='social-media'>
 					<Link>
 						<i className='bx bxl-dribbble bx-md social-icon'></i>
@@ -19,17 +20,26 @@ export default function Home() {
 						<i className='bx bxl-github bx-md social-icon'></i>
 					</Link>
 				</div>
-			</div>
+			</motion.div>
 			<div className='hero-text'>
 				<span className='left'>
-					<h1 className=''>hyperreal</h1>
+					<motion.h1 className='hero-title' initial='hidden' animate='visible' variants={animations.textContainer}>
+						{Array.from('hyperreal').map((char, index) => (
+							<motion.span key={index} variants={animations.child}>
+								{char}
+							</motion.span>
+						))}
+					</motion.h1>
 				</span>
 				<span className='right'>
-					<p className='sub-heading'>
-						Elevating Online Presence,
-						<br />
-						One Pixel at a Time:
-					</p>
+					<motion.span className='sub-heading' variants={animations.textContainer} initial='hidden' animate='visible' style={{ display: 'flex' }}>
+						{'Elevating Your Online Presence, One Pixel at a Time:'.split(' ').map((word, index) => (
+							<motion.span variants={animations.child} key={index} style={{ marginRight: '0.3rem' }}>
+								{word}
+							</motion.span>
+						))}
+					</motion.span>
+
 					<p className='paragraph'>Crafting Customized Solutions to Boost Your Brand's Visibility and Success in the Digital Realm</p>
 					<Link to='/hyperreal/work'>
 						<button className='button'>
@@ -41,6 +51,6 @@ export default function Home() {
 					</Link>
 				</span>
 			</div>
-		</main>
+		</motion.main>
 	);
 }

@@ -13,7 +13,8 @@
 
 .nav-logo h3 {
 	font-size: 2rem;
-	font-family: serif;
+	font-family: 'Orbit', sans-serif;
+	letter-spacing: -0.05rem;
 }
 
 .nav-links {
