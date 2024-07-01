@@ -1,0 +1,54 @@
+.mg-container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.mg-cursor {
+	position: absolute;
+	border-radius: 50%;
+	z-index: 0;
+	transform: translate(-50%, -50%);
+}
+
+.mg-trail {
+	position: absolute;
+	border-radius: 50%;
+	background-color: #209cff;
+	pointer-events: none;
+	transform: translate(-50%, -50%); /* align the trail to the center of pointer */
+	z-index: 0;
+	transition: opacity 150ms ease;
+}
+
+.mg-overlay {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	inset: 0;
+	backdrop-filter: blur(64px);
+	background-color: hsla(0, 0%, 100%, 0.25);
+	z-index: 1;
+}
+
+.mg-content {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: transparent;
+	z-index: 999;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	pointer-events: none;
+}
+
+.mg-content h1 {
+	font-size: 18rem;
+	color: white;
+	letter-spacing: -0.4rem;
+	pointer-events: none;
+	mix-blend-mode: difference;
+}
