@@ -1,0 +1,5 @@
+.bs-scroll-container {
+	height: 100%;
+	display: flex;
+	overflow: hidden;
+}
