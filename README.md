@@ -1,4 +1,4 @@
-# hyperreal
+# hyperreal.
 
 ###### How to set up
 
@@ -7,4 +7,4 @@
 3. Run `npm install` to install required dependencies.
 4. Run `npm run dev` to start local server.
 
-Good Luck! 💜
+Good Luck Guys!
