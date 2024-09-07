@@ -24,7 +24,7 @@ export default function Home() {
 			<div className='hero-text'>
 				<span className='left'>
 					<motion.h1 className='hero-title' initial='hidden' animate='visible' variants={animations.textContainer}>
-						{Array.from('hyperreal').map((char, index) => (
+						{Array.from('hyperreal.').map((char, index) => (
 							<motion.span key={index} variants={animations.child}>
 								{char}
 							</motion.span>
@@ -32,15 +32,13 @@ export default function Home() {
 					</motion.h1>
 				</span>
 				<span className='right'>
-					<motion.span className='sub-heading' variants={animations.textContainer} initial='hidden' animate='visible' style={{ display: 'flex' }}>
-						{'Elevating Your Online Presence, One Pixel at a Time:'.split(' ').map((word, index) => (
+					<motion.p className='sub-heading' variants={animations.textContainer} initial='hidden' animate='visible' style={{ display: 'flex' }}>
+						{'We craft sleek & efficient solutions from desktop to mobile to web tailored to your unique needs.'.split(' ').map((word, index) => (
 							<motion.span variants={animations.child} key={index} style={{ marginRight: '0.3rem' }}>
 								{word}
 							</motion.span>
 						))}
-					</motion.span>
-
-					<p className='paragraph'>Crafting Customized Solutions to Boost Your Brand's Visibility and Success in the Digital Realm</p>
+					</motion.p>
 					<Link to='/hyperreal/work'>
 						<button className='button'>
 							Our work

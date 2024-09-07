@@ -11,10 +11,9 @@
 	z-index: 10;
 }
 
-.nav-logo h3 {
-	font-size: 2rem;
-	font-family: 'Orbit', sans-serif;
-	letter-spacing: -0.05rem;
+.nav-logo img {
+	width: 2rem;
+	aspect-ratio: 1;
 }
 
 .nav-links {
@@ -38,19 +37,33 @@
 	display: none;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 767px) {
 	.nav-links {
 		display: none;
 	}
 
 	.navigation {
 		flex-direction: row;
+		padding: 0 1rem;
 	}
 
 	.nav-buttons {
 		display: none;
 	}
+
 	.hamburger-menu {
 		display: block;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+	.navigation {
+		padding: 1rem;
+	}
+}
+
+@media only screen and (min-width: 1366px) {
+	.navigation {
+		padding: 4rem;
 	}
 }

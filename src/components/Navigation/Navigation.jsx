@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import logo_primary from '../../assets/logo_black_transparent.png';
+import logo_secondary from '../../assets/logo_alt_black_transparent.png';
 import './Navigation.css';
 
 export default function Navigation() {
@@ -17,7 +19,9 @@ export default function Navigation() {
 			<nav className='navigation'>
 				<span className='nav-logo'>
 					<Link to='/hyperreal' className='nav-link'>
-						<motion.h3>hyperreal</motion.h3>
+						<motion.div>
+							<img src={logo_primary} alt='logo' />
+						</motion.div>
 					</Link>
 				</span>
 

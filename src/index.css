@@ -7,7 +7,15 @@
 	--radius: 24px;
 
 	font-family: 'Inter', sans-serif;
+	font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 	scrollbar-width: none;
+}
+
+/* Support for Font Variations in Google Fonts */
+@supports (font-variation-settings: normal) {
+	:root {
+		font-family: InterVariable, sans-serif;
+	}
 }
 
 /* Resetting default styles */
