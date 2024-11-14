@@ -1,32 +1,28 @@
 {
-	"name": "hyperreal",
-	"homepage": "https://hyperreal.github.io/hyperreal/",
-	"private": true,
-	"version": "0.0.0",
-	"type": "module",
-	"scripts": {
-		"dev": "vite --port 808 --open",
-		"build": "vite build",
-		"predeploy": "npm run build",
-		"deploy": "gh-pages -d dist",
-		"lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-		"preview": "vite preview"
-	},
-	"dependencies": {
-		"framer-motion": "^11.0.28",
-		"react": "^18.2.0",
-		"react-dom": "^18.2.0",
-		"react-router-dom": "^6.22.3"
-	},
-	"devDependencies": {
-		"@types/react": "^18.2.66",
-		"@types/react-dom": "^18.2.22",
-		"@vitejs/plugin-react": "^4.2.1",
-		"eslint": "^8.57.0",
-		"eslint-plugin-react": "^7.34.1",
-		"eslint-plugin-react-hooks": "^4.6.0",
-		"eslint-plugin-react-refresh": "^0.4.6",
-		"gh-pages": "^6.1.1",
-		"vite": "^5.2.0"
-	}
+  "name": "hyperreal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "motion": "^11.11.15",
+    "next": "15.0.3",
+    "react": "19.0.0-rc-66855b96-20241106",
+    "react-dom": "19.0.0-rc-66855b96-20241106",
+    "react-icons": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
 }
