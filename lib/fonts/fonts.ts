@@ -5,6 +5,8 @@ export const hostGrotesk = Host_Grotesk({
 	variable: '--font-hostGrotesk',
 	display: 'swap',
 	weight: 'variable',
+	preload: true,
+	adjustFontFallback: false,
 });
 
 export const funnelDisplay = Funnel_Display({
@@ -12,4 +14,6 @@ export const funnelDisplay = Funnel_Display({
 	variable: '--font-funnel-display',
 	display: 'swap',
 	weight: '600',
+	preload: true,
+	adjustFontFallback: false,
 });
