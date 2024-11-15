@@ -55,7 +55,7 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 	return (
 		<motion.div
 			ref={scope}
-			className='navigation grains fixed inset-0 z-50 flex h-svh w-full items-center justify-center bg-black/60 font-light text-white backdrop-blur-xl backdrop-saturate-200 md:h-screen'
+			className='navigation fixed inset-0 z-50 flex h-svh w-full items-center justify-center bg-black/60 font-light text-white backdrop-blur-xl backdrop-saturate-200 md:h-screen'
 			{...menuSlide}>
 			<motion.nav className='mx-auto my-32 grid w-full grid-cols-none grid-rows-3 gap-16 p-16 text-base capitalize md:grid-cols-3 md:grid-rows-none md:gap-32 md:text-lg lg:text-5xl'>
 				<PiArrowRight className='absolute h-8 w-8 opacity-0 transition-all duration-500 group-hover/link:opacity-100' />
