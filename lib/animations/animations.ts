@@ -9,7 +9,37 @@ export const menuSlide = {
 		y: '-100%',
 	},
 	transition: {
-		duration: 0.5,
+		duration: 0.8,
+		ease: [0.645, 0.045, 0.355, 1],
+	},
+};
+
+export const initialFade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+	},
+	transition: {
+		duration: 1,
+		delay: 3,
+		ease: [0.645, 0.045, 0.355, 1],
+	},
+};
+
+export const fade = {
+	initial: {
+		opacity: 0,
+	},
+	animate: {
+		opacity: 1,
+	},
+	exit: {
+		opacity: 0,
+	},
+	transition: {
+		duration: 1,
 		ease: [0.645, 0.045, 0.355, 1],
 	},
 };
@@ -73,6 +103,21 @@ export const menuItemText = {
 		y: 0,
 		transition: {
 			duration: 0.5,
+			ease: [0.645, 0.045, 0.355, 1],
+		},
+	},
+};
+
+export const pageTransition = {
+	initial: {
+		opacity: 0,
+		y: 150,
+	},
+	animate: {
+		opacity: 1,
+		y: 0,
+		transition: {
+			duration: 1.5,
 			ease: [0.645, 0.045, 0.355, 1],
 		},
 	},
