@@ -25,7 +25,7 @@ export default function ScrollWidget() {
 		<AnimatePresence>
 			{visibility && (
 				<motion.div
-					className='fixed bottom-8 right-8 z-[999] flex items-center justify-center overflow-clip rounded-[100%] border border-white/20 bg-black p-3'
+					className='fixed bottom-8 right-8 z-[999] flex items-center justify-center overflow-clip rounded-[100%] border border-white/10 bg-black p-3'
 					{...fade}
 					onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
 					<HiArrowSmallUp className='h-8 w-8 text-white' />
