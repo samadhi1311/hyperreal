@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import Navigation from './navigation';
+import Navigation from '@/components/navigation';
 import { initialFade, menuButton } from '@/lib/animations/animations';
 
 export default function MenuButton() {
@@ -10,7 +10,7 @@ export default function MenuButton() {
 	return (
 		<>
 			<motion.button
-				className='fixed right-8 top-8 z-[999] w-24 cursor-pointer overflow-hidden rounded-full border border-white/20 bg-black p-2 text-white'
+				className='fixed right-8 top-8 z-[999] w-24 cursor-pointer overflow-hidden rounded-full border border-white/10 bg-black p-2 text-white'
 				onClick={() => setIsOpen(!isOpen)}
 				{...initialFade}>
 				<label htmlFor='menu' className='relative flex w-32 cursor-pointer items-center bg-black px-4 py-3'>
