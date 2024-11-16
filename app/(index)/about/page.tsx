@@ -1,14 +1,15 @@
 'use client';
 
 import PageWrapper from '@/components/ui/page-wrapper';
-import ParallaxLogo from '@/components/ui/parallax-logo';
+import ParallaxLogo from '@/components/parallax-logo';
+import Section from '@/components/ui/section';
 import { HiFaceSmile } from 'react-icons/hi2';
 
 export default function About() {
 	return (
 		<PageWrapper>
-			<section className='mx-auto max-w-screen-2xl px-4 py-32 md:px-8 lg:px-16'>
-				<div className='container flex flex-col gap-28'>
+			<Section>
+				<div className='flex flex-col gap-28'>
 					<div className='flex flex-col gap-6'>
 						<h1 className='text-3xl font-semibold lg:text-6xl'>
 							Why Choose <span className='funnel-display bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>hyperreal</span>?
@@ -71,7 +72,7 @@ export default function About() {
 						</div>
 					</div>
 				</div>
-			</section>
+			</Section>
 		</PageWrapper>
 	);
 }
