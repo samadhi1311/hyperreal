@@ -11,7 +11,8 @@ body {
 	font-family: 'Host Grotesk', sans-serif;
 	font-optical-sizing: auto;
 	font-style: normal;
-	letter-spacing: 0.025rem;
+	letter-spacing: 0.25px;
+	font-weight: 400;
 }
 
 .funnel-display {
