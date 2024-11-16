@@ -16,7 +16,7 @@ export function PrimaryButton({ className, children, onClick }: ButtonProps) {
 			initial='initial'
 			whileHover='hover'
 			animate='animate'
-			className={cn('py-3 px-6 flex flex-col h-12 gap-6 font-medium overflow-hidden rounded-full text-black bg-white border border-white/20', className)}
+			className={cn('py-3 px-6 flex flex-col h-12 gap-6 font-medium overflow-hidden rounded-full text-black bg-white border border-white/10', className)}
 			onClick={onClick}>
 			<motion.span variants={menuItemText} className='flex items-center'>
 				{children}
@@ -34,7 +34,7 @@ export function SecondaryButton({ className, children, onClick }: ButtonProps) {
 			initial='initial'
 			whileHover='hover'
 			animate='animate'
-			className={cn('py-3 px-6 flex flex-col h-12 gap-6 font-medium overflow-hidden rounded-full text-white bg-transparent border border-white/20', className)}
+			className={cn('py-3 px-6 flex flex-col h-12 gap-6 font-medium overflow-hidden rounded-full text-white bg-transparent border border-white/10', className)}
 			onClick={onClick}>
 			<motion.span variants={menuItemText} className='flex items-center'>
 				{children}
