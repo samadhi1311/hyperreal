@@ -21,7 +21,7 @@ export default function Layout({
 
 	return (
 		<body style={{ backgroundColor: 'black' }} className={`${hostGrotesk} ${funnelDisplay} antialiased`}>
-			<ReactLenis root options={{ lerp: 0.3 }}>
+			<ReactLenis root options={{ lerp: 0.25 }}>
 				<motion.div style={{ scaleX }} className='fixed left-0 right-0 top-0 z-10 h-1 origin-left bg-gradient-to-r from-violet-500 to-orange-300' />
 				<MenuButton />
 
