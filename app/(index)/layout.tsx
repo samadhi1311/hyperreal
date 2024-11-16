@@ -3,7 +3,7 @@
 import '../globals.css';
 import { ReactLenis } from '@studio-freight/react-lenis';
 import { motion, useScroll, useSpring } from 'motion/react';
-import MenuButton from '@/components/ui/menu-button';
+import MenuButton from '@/components/menu-button';
 import ScrollWidget from '@/components/ui/scroll-widget';
 import { hostGrotesk, funnelDisplay } from '@/lib/fonts/fonts';
 
