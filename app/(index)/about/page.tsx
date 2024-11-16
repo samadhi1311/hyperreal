@@ -1,6 +1,7 @@
 'use client';
 
 import PageWrapper from '@/components/ui/page-wrapper';
+import ParallaxLogo from '@/components/ui/parallax-logo';
 import { HiFaceSmile } from 'react-icons/hi2';
 
 export default function About() {
@@ -17,9 +18,6 @@ export default function About() {
 						</p>
 					</div>
 					<div className='grid gap-6 md:grid-cols-2'>
-						<span className='flex aspect-square h-64 w-full items-center justify-center rounded-2xl bg-white'>
-							<img src='/hyperreal.svg' alt='placeholder' className='size-32 invert' />
-						</span>
 						<div className='flex flex-col justify-between gap-10 rounded-2xl p-10'>
 							<p className='text-sm tracking-wide'>OUR MISSION</p>
 							<p className='text-lg'>
@@ -27,6 +25,9 @@ export default function About() {
 								experience for your users, and build something you’ll be proud to share.
 							</p>
 						</div>
+						<span className='h-64 w-full overflow-clip rounded-2xl bg-white'>
+							<ParallaxLogo />
+						</span>
 					</div>
 					<div className='flex flex-col gap-6 md:gap-20'>
 						<div className='max-w-2xl'>
