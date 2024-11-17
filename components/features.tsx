@@ -7,6 +7,7 @@ import { LuSparkles } from 'react-icons/lu';
 import { PiHandHeartBold } from 'react-icons/pi';
 import { AiOutlineCloudServer } from 'react-icons/ai';
 import Section from '@/components/ui/section';
+import { H2, H3, P2, P4 } from '@/components/ui/typography';
 
 function FeatureItem({ icon, title, description, id }: { icon: React.ReactNode; title: string; description: string; id: string }) {
 	return (
@@ -25,8 +26,8 @@ function FeatureItem({ icon, title, description, id }: { icon: React.ReactNode; 
 			<span className='flex size-8 items-center justify-center rounded-full bg-white md:size-12'>{icon}</span>
 
 			<div className='flex flex-col gap-2'>
-				<h3 className='font-medium md:mb-2 md:text-2xl'>{title}</h3>
-				<p className='text-balance text-sm text-white/60 md:text-base'>{description}</p>
+				<H3 className='md:mb-2'>{title}</H3>
+				<P2 className='text-white/60'>{description}</P2>
 			</div>
 		</motion.div>
 	);
@@ -45,10 +46,10 @@ export default function Features() {
 						ease: [0.645, 0.045, 0.355, 1],
 					},
 				}}>
-				<p className='mb-2 text-xs uppercase text-white/60'>unmatched deliverables</p>
-				<h2 className='text-3xl font-medium lg:text-5xl'>What we offer</h2>
+				<P4 className='mb-2'>unmatched deliverables</P4>
+				<H2>What we offer</H2>
 			</motion.div>
-			<div className='mx-auto mt-16 grid gap-x-24 gap-y-16 md:grid-cols-2 lg:mt-20'>
+			<div className='mx-auto mt-8 grid gap-x-24 gap-y-16 md:grid-cols-2 lg:mt-16'>
 				<FeatureItem
 					id='1'
 					icon={<GrTechnology className='size-6 text-black md:size-8' />}

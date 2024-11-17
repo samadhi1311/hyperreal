@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { FaChevronDown } from 'react-icons/fa';
 import Section from '@/components/ui/section';
+import { H2, H4, P2 } from '@/components/ui/typography';
 
 type FAQItemProps = {
 	icon?: React.ReactNode;
@@ -51,7 +52,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
 	return (
 		<motion.div className='mx-auto w-full transition-all duration-500 ease-in-out'>
 			<button className='flex w-full cursor-pointer items-center justify-between' onClick={() => setIsOpen(!isOpen)}>
-				<h3 className='font cursor-pointer md:text-xl'>{question}</h3>
+				<H4 className='cursor-pointer'>{question}</H4>
 				<motion.span
 					animate={{
 						rotate: isOpen ? 180 : 0,
@@ -92,8 +93,8 @@ export default function FAQ() {
 							ease: [0.645, 0.045, 0.355, 1],
 						},
 					}}>
-					<h1 className='text-3xl font-medium md:text-5xl'>Frequently Asked Questions</h1>
-					<p className='max-w-lg'>You might have the same questions. So, we answered them before you ask. If you have any further questions, please contact us.</p>
+					<H2 className='text-3xl font-medium md:text-5xl'>Frequently Asked Questions</H2>
+					<P2 className='max-w-lg'>You might have the same questions. So, we answered them before you ask. If you have any further questions, please contact us.</P2>
 				</motion.div>
 				<motion.div
 					className='w-full space-y-8 opacity-0'
