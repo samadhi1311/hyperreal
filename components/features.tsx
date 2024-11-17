@@ -82,7 +82,7 @@ export default function Features() {
 					id='5'
 					icon={<AiOutlineCloudServer className='size-7 text-black md:size-10' />}
 					title='Fast, Reliable Hosting'
-					description='We host your website on our high-speed servers to ensure fast load times and maximum uptime, giving your visitors a seamless browsing experience.'
+					description='We host your website on our high-speed servers to ensure fast load times, maximum uptime and ultimate security, giving your visitors a seamless browsing experience.'
 				/>
 			</div>
 		</Section>
