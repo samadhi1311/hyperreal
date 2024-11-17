@@ -3,11 +3,11 @@
 import { cn } from '@/lib/utils';
 
 function H1({ children, className }: { children: React.ReactNode; className?: string }) {
-	return <h1 className={cn('text-5xl font-medium lg:text-7xl', className)}>{children}</h1>;
+	return <h1 className={cn('funnel-display text-5xl font-medium lg:text-7xl', className)}>{children}</h1>;
 }
 
 function H2({ children, className }: { children: React.ReactNode; className?: string }) {
-	return <h2 className={cn('text-3xl font-medium lg:text-5xl', className)}>{children}</h2>;
+	return <h2 className={cn('funnel-display text-3xl font-medium lg:text-5xl', className)}>{children}</h2>;
 }
 
 function H3({ children, className }: { children: React.ReactNode; className?: string }) {
