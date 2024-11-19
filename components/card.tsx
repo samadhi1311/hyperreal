@@ -11,7 +11,7 @@ export interface CardProps extends React.HTMLAttributes<HTMLDivElement> {
 	gradientOpacity?: number;
 }
 
-export function Card({ children, className, gradientSize = 200, gradientColor = '#282828', gradientOpacity = 0.8 }: CardProps) {
+export function Card({ children, className, gradientSize = 200, gradientColor = '#252525', gradientOpacity = 0.8 }: CardProps) {
 	const mouseX = useMotionValue(-gradientSize);
 	const mouseY = useMotionValue(-gradientSize);
 
@@ -38,10 +38,10 @@ export function Card({ children, className, gradientSize = 200, gradientColor = 
 		<div
 			onMouseMove={handleMouseMove}
 			onMouseLeave={handleMouseLeave}
-			className={cn('group relative flex size-full overflow-hidden rounded-xl bg-[hsl(0,0%,5%)] border border-white/10 text-white', className)}>
-			<div className='relative z-10'>{children}</div>
+			className={cn('group relative flex size-full overflow-hidden rounded-xl bg-gradient-to-br from-[#151515] to-[#000000] border border-white/10 text-white', className)}>
+			<div className='grains relative z-10 w-full'>{children}</div>
 			<motion.div
-				className='pointer-events-none absolute -inset-px rounded-xl opacity-0 transition-opacity duration-300 group-hover:opacity-100'
+				className='pointer-events-none absolute -inset-px rounded-xl opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-100'
 				style={{
 					background: useMotionTemplate`
             radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientColor}, transparent 100%)
