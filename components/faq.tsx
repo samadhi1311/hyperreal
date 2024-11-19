@@ -81,7 +81,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
 export default function FAQ() {
 	return (
 		<Section>
-			<div className='grid grid-cols-1 lg:grid-cols-2'>
+			<div className='grid grid-cols-1 gap-16 lg:grid-cols-2'>
 				<motion.div
 					className='w-full space-y-4'
 					initial={{ opacity: 0, x: -50 }}
@@ -93,15 +93,15 @@ export default function FAQ() {
 							ease: [0.645, 0.045, 0.355, 1],
 						},
 					}}>
-					<H2 className='text-3xl font-medium md:text-5xl'>Frequently Asked Questions</H2>
+					<H2>Frequently Asked Questions</H2>
 					<P2 className='max-w-lg'>You might have the same questions. So, we answered them before you ask. If you have any further questions, please contact us.</P2>
 				</motion.div>
 				<motion.div
 					className='w-full space-y-8 opacity-0'
-					initial={{ opacity: 0, x: 50 }}
+					initial={{ opacity: 0, y: 50 }}
 					whileInView={{
 						opacity: [0, 1],
-						x: [50, 0],
+						y: [50, 0],
 						transition: {
 							duration: 0.5,
 							ease: [0.645, 0.045, 0.355, 1],
@@ -112,7 +112,15 @@ export default function FAQ() {
 						answer='We create everything from simple static websites like portfolios to full-scale e-commerce platforms, all tailored to meet your unique business needs.'
 					/>
 
-					<FAQItem question='Will you host my website?' answer='Optional but absolutely. We offer fast, reliable hosting services to give your website maximum speed and uptime.' />
+					<FAQItem
+						question="Why do the pricings say 'Starting from'?"
+						answer='You might be need some extra features that does not include by default. We may charge extra for those features based on the complexity.'
+					/>
+
+					<FAQItem
+						question='Will you host my website?'
+						answer='Absolutely, with free pricing tier that is sufficient for small to medium scale businesses. We offer fast, reliable hosting services to give your website maximum speed and uptime. Learn more about our hosting services.'
+					/>
 
 					<FAQItem
 						question='Can you help with the design and branding?'
