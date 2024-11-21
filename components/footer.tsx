@@ -26,7 +26,7 @@ export default function Footer() {
 			<div className='relative -top-[100vh] h-[calc(100vh+80vh)]'>
 				<div className='sticky top-[calc(100vh-80vh)] h-[80vh]'>
 					<footer className='grains flex h-full w-full flex-col items-center justify-around'>
-						<div className='absolute top-0 -z-20 h-full w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-violet-800 via-violet-600 to-orange-600'></div>
+						<div className='vignette absolute top-0 -z-20 h-full w-full bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-violet-800 via-violet-600 to-orange-600'></div>
 						<div className='absolute bottom-0 -z-10 h-full w-full bg-gradient-to-t from-black'></div>
 						<div>
 							<H1>hyperreal</H1>
