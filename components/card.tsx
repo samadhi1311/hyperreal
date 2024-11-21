@@ -39,7 +39,7 @@ export function Card({ children, className, gradientSize = 200, gradientColor = 
 			onMouseMove={handleMouseMove}
 			onMouseLeave={handleMouseLeave}
 			className={cn('group relative flex size-full overflow-hidden rounded-xl bg-gradient-to-br from-[#151515] to-[#000000] border border-white/10 text-white', className)}>
-			<div className='grains relative z-10 w-full'>{children}</div>
+			<div className='grains vignette relative z-10 w-full'>{children}</div>
 			<motion.div
 				className='pointer-events-none absolute -inset-px rounded-xl opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-100'
 				style={{
