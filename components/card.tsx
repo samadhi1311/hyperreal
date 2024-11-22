@@ -38,10 +38,10 @@ export function Card({ children, className, gradientSize = 200, gradientColor = 
 		<div
 			onMouseMove={handleMouseMove}
 			onMouseLeave={handleMouseLeave}
-			className={cn('group relative flex size-full overflow-hidden rounded-xl bg-gradient-to-br from-[#151515] to-[#000000] border border-white/10 text-white', className)}>
-			<div className='grains vignette relative z-10 w-full'>{children}</div>
+			className={cn('group relative flex size-full overflow-hidden rounded-2xl bg-gradient-to-br from-[#151515] to-[#000000] border border-white/10 text-white', className)}>
+			<div className='grains vignette relative z-10 w-full overflow-hidden rounded-2xl'>{children}</div>
 			<motion.div
-				className='pointer-events-none absolute -inset-px rounded-xl opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-100'
+				className='pointer-events-none absolute -inset-px overflow-hidden rounded-2xl opacity-0 blur-md transition-opacity duration-300 group-hover:opacity-100'
 				style={{
 					background: useMotionTemplate`
             radial-gradient(${gradientSize}px circle at ${mouseX}px ${mouseY}px, ${gradientColor}, transparent 100%)
