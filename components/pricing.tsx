@@ -90,7 +90,6 @@ function Pricing() {
 					initial={{ opacity: 0, scale: 0.95 }}
 					whileInView={{
 						opacity: [0, 1],
-						scale: [0.9, 1],
 						transition: {
 							duration: 0.5,
 							ease: [0.645, 0.045, 0.355, 1],
@@ -117,7 +116,6 @@ function Pricing() {
 					initial={{ opacity: 0, scale: 0.95 }}
 					whileInView={{
 						opacity: [0, 1],
-						scale: [0.9, 1],
 						transition: {
 							duration: 0.5,
 							ease: [0.645, 0.045, 0.355, 1],
