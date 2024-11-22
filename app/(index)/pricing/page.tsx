@@ -217,9 +217,8 @@ export default function PricingPage() {
 							<div className='p-8 md:p-12'>
 								<LuSprout className='size-16' />
 								<P1 className='mt-4 text-2xl'>
-									The Free tier can handle at least{' '}
-									<span className='funnel-display animate-text bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>7,500</span> users per month or{' '}
-									<span className='funnel-display animate-text bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>250</span> users a day in a real world
+									The Free tier can handle at least <span className='funnel-display bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>7,500</span> users
+									per month or <span className='funnel-display bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>250</span> users a day in a real world
 									scenario.
 								</P1>
 							</div>

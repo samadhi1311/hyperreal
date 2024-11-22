@@ -19,7 +19,7 @@ export default function About() {
 						<div className='flex w-full flex-col justify-around'>
 							<div>
 								<H1>
-									Why Choose <span className='animate-text bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>hyperreal</span>?
+									Why Choose <span className='bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>hyperreal</span>?
 								</H1>
 							</div>
 							<div>
