@@ -13,20 +13,10 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 
 	async function NavAnimations() {
 		await animate(
-			'nav',
-			{
-				x: [-50, 0],
-			},
-			{
-				duration: 0.1,
-			}
-		);
-
-		await animate(
 			'li',
 			{
-				opacity: [0, 1],
 				x: [-50, 0],
+				opacity: 1,
 			},
 			{
 				duration: 1,
@@ -65,29 +55,29 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 				<div className='group/section'>
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Our website</P3>
 					<hr className='mb-4 origin-top-left opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
-					<motion.ul className='flex flex-row gap-16 md:flex-col'>
+					<ul className='flex flex-row gap-16 md:flex-col'>
 						<MenuItem title='Home' url='/' />
 						<MenuItem title='Work' url='/work' />
 						<MenuItem title='About' url='/about' />
-					</motion.ul>
+					</ul>
 				</div>
 
 				<div className='group/section'>
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Contact us</P3>
 					<hr className='mb-4 opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
-					<motion.ul className='flex flex-row gap-16 md:flex-col'>
+					<ul className='flex flex-row gap-16 md:flex-col'>
 						<MenuItem title='whatsapp' url='/contact' />
 						<MenuItem title='email' url='/contact' />
-					</motion.ul>
+					</ul>
 				</div>
 
 				<div className='group/section'>
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Socials</P3>
 					<hr className='mb-4 opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
-					<motion.ul className='flex flex-row gap-16 md:flex-col'>
+					<ul className='flex flex-row gap-16 md:flex-col'>
 						<MenuItem title='instagram' url='/' />
 						<MenuItem title='facebook' url='/' />
-					</motion.ul>
+					</ul>
 				</div>
 			</motion.nav>
 		</motion.div>
