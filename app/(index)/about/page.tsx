@@ -5,6 +5,7 @@ import ParallaxLogo from '@/components/parallax-logo';
 import Section from '@/components/ui/section';
 import Footer from '@/components/footer';
 import { H1, H2, H3, P1, P2 } from '@/components/ui/typography';
+import { LuSend } from 'react-icons/lu';
 import { Card } from '@/components/card';
 import { LuCode2 } from 'react-icons/lu';
 import { LuPaintbrush } from 'react-icons/lu';
@@ -72,6 +73,40 @@ export default function About() {
 									</div>
 								</div>
 							</Card>
+						</div>
+					</div>
+				</Section>
+				<Section>
+					<H2>Contact us</H2>
+					<div className='grid grid-cols-1 gap-8 py-16 md:grid-cols-2'>
+						<div className='flex max-w-lg flex-col justify-between leading-relaxed'>
+							<div>
+								<H2>Tell us your idea,</H2>
+								<H2>
+									and we will sent you a <span className='bg-gradient-to-br from-violet-600 to-orange-400 bg-clip-text text-transparent'>project proposal</span>.
+								</H2>
+							</div>
+							<div>
+								<H2>Better yet, Text us on WhatsApp,</H2>
+								<H2>
+									<span className='bg-gradient-to-br from-violet-600 to-orange-400 bg-clip-text text-transparent'>+94 78 275 2500</span>
+								</H2>
+							</div>
+						</div>
+						<div className='rounded-lg border border-white/10 p-8'>
+							<form className='flex flex-col gap-8 p-8'>
+								<div className='grid grid-cols-2 gap-4'>
+									<input type='text' placeholder='First name' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
+									<input type='text' placeholder='Last name' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
+								</div>
+								<input type='email' placeholder='Your Email' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
+								<input type='email' placeholder='Subject' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
+								<textarea placeholder='Message' rows={4} className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
+								<button className='flex w-fit items-center gap-3 self-end rounded-lg border border-white/10 bg-white/10 px-4 py-2 duration-500 hover:bg-white/20'>
+									<LuSend className='size-4' />
+									Submit
+								</button>
+							</form>
 						</div>
 					</div>
 				</Section>
