@@ -97,13 +97,18 @@ function Pricing() {
 						},
 					}}>
 					<Card>
-						<div className='flex flex-col space-y-2 p-8'>
+						<div className='absolute right-0 top-0 overflow-hidden rounded-bl-2xl bg-white/5 p-4 backdrop-blur-[1px]'>
+							<P4 className='bg-gradient-to-r from-violet-500 to-orange-400 bg-clip-text font-medium tracking-widest text-transparent'>Limited-time Offer</P4>
+						</div>
+						<div className='flex flex-col space-y-2 overflow-hidden p-8'>
 							<H3 className='w-fit bg-gradient-to-br from-violet-500 to-orange-400 bg-clip-text text-transparent'>Core</H3>
 							<P2 className=''>Quick, reliable solutions to establish your online presence.</P2>
 						</div>
 						<div className='p-8 pt-0'>
-							<P2 className='mt-4'>Starting from</P2>
-							<H2>LKR 32, 000</H2>
+							<P2 className='mt-4'>
+								Starting from <span className='line-through decoration-white/60'>LKR 32, 000</span>
+							</P2>
+							<H2>LKR 24, 000</H2>
 						</div>
 					</Card>
 				</motion.div>
@@ -119,13 +124,18 @@ function Pricing() {
 						},
 					}}>
 					<Card>
+						<div className='absolute right-0 top-0 overflow-hidden rounded-bl-2xl bg-white/5 p-4 backdrop-blur-[1px]'>
+							<P4 className='bg-gradient-to-r from-violet-500 to-orange-400 bg-clip-text font-medium tracking-widest text-transparent'>Limited-time Offer</P4>
+						</div>
 						<div className='flex flex-col space-y-2 p-8'>
 							<H3 className='w-fit bg-gradient-to-tl from-violet-500 to-orange-400 bg-clip-text text-transparent'>Business</H3>
 							<P2 className=''>Complete e-commerce solution to grow your business.</P2>
 						</div>
 						<div className='p-8 pt-0'>
-							<P2 className='mt-4'>Starting from</P2>
-							<H2>LKR 56, 000</H2>
+							<P2 className='mt-4'>
+								Starting from <span className='line-through decoration-white/60'>LKR 56, 000</span>
+							</P2>
+							<H2>LKR 47, 000</H2>
 						</div>
 					</Card>
 				</motion.div>
@@ -147,8 +157,8 @@ function Pricing() {
 						<div className='p-8 md:p-12'>
 							<TbServerBolt className='size-16' />
 							<P1 className='mt-4 text-2xl'>
-								For details on hosting expenses at <span className='bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>hyperreal</span>, visit our{' '}
-								<Link href='#' className='underline'>
+								For more details on how pricing works at <span className='bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>hyperreal</span>, visit our{' '}
+								<Link href='/pricing' className='underline'>
 									pricing
 								</Link>{' '}
 								page.
