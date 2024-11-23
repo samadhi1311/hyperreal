@@ -4,11 +4,11 @@ import PageWrapper from '@/components/ui/page-wrapper';
 import ParallaxLogo from '@/components/parallax-logo';
 import Section from '@/components/ui/section';
 import Footer from '@/components/footer';
-import { H1, H2, H3, P1, P2 } from '@/components/ui/typography';
+import { H1, H2, P1, P2 } from '@/components/ui/typography';
 import { LuSend } from 'react-icons/lu';
-import { Card } from '@/components/card';
-import { LuCode2 } from 'react-icons/lu';
-import { LuPaintbrush } from 'react-icons/lu';
+// import { Card } from '@/components/card';
+// import { LuCode2 } from 'react-icons/lu';
+// import { LuPaintbrush } from 'react-icons/lu';
 
 export default function About() {
 	return (
@@ -43,7 +43,7 @@ export default function About() {
 						</div>
 					</div>
 				</Section>
-				<Section>
+				{/* <Section>
 					<H2>Team</H2>
 					<div className='grid grid-cols-1 gap-8 py-16 md:grid-cols-2'>
 						<div className='overflow-hidden'>
@@ -75,7 +75,7 @@ export default function About() {
 							</Card>
 						</div>
 					</div>
-				</Section>
+				</Section> */}
 				<Section>
 					<H2>Contact us</H2>
 					<div className='grid grid-cols-1 gap-8 py-16 md:grid-cols-2'>
