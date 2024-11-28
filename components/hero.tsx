@@ -1,11 +1,13 @@
 'use client';
 
-import { PrimaryButton, SecondaryButton } from '@/components/ui/button';
 import { motion, useAnimate, stagger } from 'motion/react';
 import Link from 'next/link';
 import { useEffect } from 'react';
 import { BiUserVoice } from 'react-icons/bi';
 import { useScreenSize } from '@/lib/hooks/useScreenSize';
+import { TextShimmer } from '@/components/ui/text-shimmer';
+import { LuArrowDownCircle } from 'react-icons/lu';
+import { menuItemText } from '@/lib/animations/animations';
 
 export default function Hero() {
 	const [scope, animate] = useAnimate();
@@ -96,7 +98,17 @@ export default function Hero() {
 				},
 				{
 					duration: 1,
-					ease: [0.645, 0.045, 0.355, 1],
+					delay: 0.5,
+				}
+			);
+
+			await animate(
+				'.scroll-notice',
+				{
+					opacity: 1,
+				},
+				{
+					duration: 1,
 					delay: 0.5,
 				}
 			);
@@ -135,16 +147,46 @@ export default function Hero() {
 
 				<motion.span className='cta-buttons flex items-center gap-4 self-center opacity-0'>
 					<Link href='/contact'>
-						<PrimaryButton>
-							<BiUserVoice className='mr-2 h-5 w-5 text-black' />
-							Contact us
-						</PrimaryButton>
+						<motion.button
+							initial='initial'
+							whileHover='hover'
+							animate='animate'
+							className='flex h-12 flex-col gap-6 overflow-hidden rounded-full border border-white/20 bg-white/5 px-6 py-3 font-medium text-white'>
+							<motion.span variants={menuItemText} className='flex items-center gap-3'>
+								<BiUserVoice className='size-5' />
+								Contact us
+							</motion.span>
+							<motion.span variants={menuItemText} aria-hidden className='flex items-center gap-3 bg-gradient-to-tr from-violet-700 to-orange-500 bg-clip-text text-transparent'>
+								<BiUserVoice className='size-5' style={{ fill: 'url(#hyperreal-gradient)' }} />
+								Contact us
+							</motion.span>
+							<svg width='0' height='0'>
+								<linearGradient id='hyperreal-gradient' x1='100%' y1='100%' x2='0%' y2='0%'>
+									<stop stopColor='#8b5cf6' offset='0%' />
+									<stop stopColor='#fdba74' offset='100%' />
+								</linearGradient>
+							</svg>
+						</motion.button>
 					</Link>
 
 					<Link href='/#hyperreal-features'>
-						<SecondaryButton>Learn more</SecondaryButton>
+						<motion.button initial='initial' whileHover='hover' animate='animate' className='flex h-12 flex-col gap-6 overflow-hidden bg-transparent px-6 py-3 font-medium text-white'>
+							<motion.span variants={menuItemText} className='flex items-center underline decoration-white/30 underline-offset-8'>
+								Learn more
+							</motion.span>
+							<motion.span variants={menuItemText} aria-hidden className='flex items-center bg-gradient-to-tr from-violet-600 to-orange-400 bg-clip-text text-transparent'>
+								Learn more
+							</motion.span>
+						</motion.button>
 					</Link>
 				</motion.span>
+
+				<motion.div className='scroll-notice absolute bottom-8 flex items-center gap-3 rounded-3xl border border-white/20 px-4 py-2 opacity-0 md:bottom-12 lg:bottom-16'>
+					<LuArrowDownCircle className='size-5 text-[#71717a]' />
+					<TextShimmer duration={2} spread={1}>
+						Scroll to discover more
+					</TextShimmer>
+				</motion.div>
 			</div>
 		</section>
 	);
