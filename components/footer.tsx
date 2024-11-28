@@ -73,7 +73,8 @@ export default function Footer() {
 
 						<div className=''>
 							<P3 className='tracking-wider opacity-90'>
-								&copy; 2024 <span className='bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>hyperreal</span>, All Rights Reserved.
+								&copy; Copyright 2024 <span className='bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text font-medium tracking-wide text-transparent'>hyperreal</span>, All
+								Rights Reserved.
 							</P3>
 						</div>
 					</footer>
