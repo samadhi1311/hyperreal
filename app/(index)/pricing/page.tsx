@@ -55,10 +55,9 @@ export default function PricingPage() {
 				<div className='my-16 flex flex-col gap-6 lg:flex-row lg:gap-4'>
 					<motion.div
 						className='h-full w-full'
-						initial={{ opacity: 0, scale: 0.95 }}
+						initial={{ opacity: 0 }}
 						whileInView={{
 							opacity: [0, 1],
-							scale: [0.9, 1],
 							transition: {
 								duration: 0.5,
 								ease: [0.645, 0.045, 0.355, 1],
@@ -82,10 +81,9 @@ export default function PricingPage() {
 					</motion.div>
 					<motion.div
 						className='h-full w-full'
-						initial={{ opacity: 0, scale: 0.95 }}
+						initial={{ opacity: 0 }}
 						whileInView={{
 							opacity: [0, 1],
-							scale: [0.9, 1],
 							transition: {
 								duration: 0.5,
 								ease: [0.645, 0.045, 0.355, 1],
@@ -127,10 +125,9 @@ export default function PricingPage() {
 				<div className='my-16 flex flex-col gap-6 lg:flex-row lg:gap-4'>
 					<motion.div
 						className='h-full w-full'
-						initial={{ opacity: 0, scale: 0.95 }}
+						initial={{ opacity: 0 }}
 						whileInView={{
 							opacity: [0, 1],
-							scale: [0.9, 1],
 							transition: {
 								duration: 0.5,
 								ease: [0.645, 0.045, 0.355, 1],
@@ -144,15 +141,15 @@ export default function PricingPage() {
 							<div className='p-8 pt-0'>
 								<P2 className='mt-4'>Starting from just</P2>
 								<H2>LKR 760/month</H2>
+								<P2>or LKR 9, 120/year</P2>
 							</div>
 						</Card>
 					</motion.div>
 					<motion.div
 						className='h-full w-full'
-						initial={{ opacity: 0, scale: 0.95 }}
+						initial={{ opacity: 0 }}
 						whileInView={{
 							opacity: [0, 1],
-							scale: [0.9, 1],
 							transition: {
 								duration: 0.5,
 								ease: [0.645, 0.045, 0.355, 1],
@@ -166,6 +163,7 @@ export default function PricingPage() {
 							<div className='p-8 pt-0'>
 								<P2 className='mt-4'>Starting from just</P2>
 								<H2>LKR 1, 900/month</H2>
+								<P2>or LKR 22, 800/year</P2>
 							</div>
 						</Card>
 					</motion.div>
