@@ -69,7 +69,7 @@ export default function Features() {
 				<FeatureItem
 					id='3'
 					icon={<LuSparkles className='size-6 text-black md:size-8' />}
-					title='Brand Identity Enhancement'
+					title='Tailored Brand Identity'
 					description='Beyond web design, we work with you to enhance and strengthen your brand identity, ensuring your online presence is both memorable and impactful.'
 				/>
 
