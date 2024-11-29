@@ -34,7 +34,7 @@ export const metadata: Metadata = {
 		url: 'https://hyperreal.cloud',
 		images: [
 			{
-				url: '/meta-image.png',
+				url: 'https://www.hyperreal.cloud/meta-image.png',
 				width: 1200,
 				height: 628,
 				alt: 'hyperreal - We develop digital destinations that stand out from the crowd.',
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
 		card: 'summary_large_image',
 		title: 'hyperreal - We develop digital destinations that stand out from the crowd.',
 		description: 'We are a premier web development agency based in Sri Lanka, specializing in innovative, high-performance websites, from sleek personal sites to robust e-commerce platforms.',
-		images: ['/meta-image.png'],
+		images: ['https://www.hyperreal.cloud/meta-image.png'],
 	},
 };
 
