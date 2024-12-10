@@ -139,7 +139,7 @@ export default function PricingPage() {
 								<P2 className=''>Reliable hosting for your online presence.</P2>
 							</div>
 							<div className='p-8 pt-0'>
-								<P2 className='mt-4'>Starting from just</P2>
+								<P2 className='mt-4'>For just</P2>
 								<H2>LKR 1, 300/month</H2>
 								<P2>or LKR 15, 600/year</P2>
 							</div>
@@ -161,7 +161,7 @@ export default function PricingPage() {
 								<P2 className=''>Complete e-commerce solution to grow your business.</P2>
 							</div>
 							<div className='p-8 pt-0'>
-								<P2 className='mt-4'>Starting from just</P2>
+								<P2 className='mt-4'>For just</P2>
 								<H2>LKR 2, 400/month</H2>
 								<P2>or LKR 28, 800/year</P2>
 							</div>
