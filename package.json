@@ -15,11 +15,7 @@
 		"next": "15.0.3",
 		"react": "^18.3.1",
 		"react-dom": "^18.3.1",
-<<<<<<< HEAD
-		"react-icons": "^5.4.0",
-=======
 		"react-icons": "5.2.1",
->>>>>>> 2c3a719 (Updated React Icons)
 		"tailwind-merge": "^2.5.4",
 		"tailwindcss-animate": "^1.0.7"
 	},
