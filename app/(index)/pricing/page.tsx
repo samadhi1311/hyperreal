@@ -73,9 +73,9 @@ export default function PricingPage() {
 							</div>
 							<div className='p-8 pt-0'>
 								<P2 className='mt-4'>
-									Starting from <span className='line-through decoration-white/60'>LKR 32, 000</span>
+									Starting from <span className='line-through decoration-white/60'>LKR 42, 000</span>
 								</P2>
-								<H2>LKR 24, 000</H2>
+								<H2>LKR 34, 000</H2>
 							</div>
 						</Card>
 					</motion.div>
@@ -99,9 +99,9 @@ export default function PricingPage() {
 							</div>
 							<div className='p-8 pt-0'>
 								<P2 className='mt-4'>
-									Starting from <span className='line-through decoration-white/60'>LKR 56, 000</span>
+									Starting from <span className='line-through decoration-white/60'>LKR 82, 000</span>
 								</P2>
-								<H2>LKR 47, 000</H2>
+								<H2>LKR 72, 000</H2>
 							</div>
 						</Card>
 					</motion.div>
@@ -140,8 +140,8 @@ export default function PricingPage() {
 							</div>
 							<div className='p-8 pt-0'>
 								<P2 className='mt-4'>Starting from just</P2>
-								<H2>LKR 760/month</H2>
-								<P2>or LKR 9, 120/year</P2>
+								<H2>LKR 1, 300/month</H2>
+								<P2>or LKR 15, 600/year</P2>
 							</div>
 						</Card>
 					</motion.div>
@@ -162,8 +162,8 @@ export default function PricingPage() {
 							</div>
 							<div className='p-8 pt-0'>
 								<P2 className='mt-4'>Starting from just</P2>
-								<H2>LKR 1, 900/month</H2>
-								<P2>or LKR 22, 800/year</P2>
+								<H2>LKR 2, 400/month</H2>
+								<P2>or LKR 28, 800/year</P2>
 							</div>
 						</Card>
 					</motion.div>

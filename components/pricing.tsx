@@ -105,9 +105,9 @@ function Pricing() {
 						</div>
 						<div className='p-8 pt-0'>
 							<P2 className='mt-4'>
-								Starting from <span className='line-through decoration-white/60'>LKR 32, 000</span>
+								Starting from <span className='line-through decoration-white/60'>LKR 42, 000</span>
 							</P2>
-							<H2>LKR 24, 000</H2>
+							<H2>LKR 34, 000</H2>
 						</div>
 					</Card>
 				</motion.div>
@@ -131,9 +131,9 @@ function Pricing() {
 						</div>
 						<div className='p-8 pt-0'>
 							<P2 className='mt-4'>
-								Starting from <span className='line-through decoration-white/60'>LKR 56, 000</span>
+								Starting from <span className='line-through decoration-white/60'>LKR 82, 000</span>
 							</P2>
-							<H2>LKR 47, 000</H2>
+							<H2>LKR 72, 000</H2>
 						</div>
 					</Card>
 				</motion.div>
