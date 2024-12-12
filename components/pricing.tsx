@@ -87,7 +87,7 @@ function Pricing() {
 			<div className='mt-16 flex flex-col gap-6 lg:flex-row lg:gap-4'>
 				<motion.div
 					className='h-full w-full'
-					initial={{ opacity: 0, scale: 0.95 }}
+					initial={{ opacity: 0 }}
 					whileInView={{
 						opacity: [0, 1],
 						transition: {
@@ -113,7 +113,7 @@ function Pricing() {
 				</motion.div>
 				<motion.div
 					className='h-full w-full'
-					initial={{ opacity: 0, scale: 0.95 }}
+					initial={{ opacity: 0 }}
 					whileInView={{
 						opacity: [0, 1],
 						transition: {
@@ -142,10 +142,9 @@ function Pricing() {
 				<PricingTable />
 				<motion.div
 					className='mt-16 h-full w-full'
-					initial={{ opacity: 0, scale: 0.95 }}
+					initial={{ opacity: 0 }}
 					whileInView={{
 						opacity: [0, 1],
-						scale: [0.9, 1],
 						transition: {
 							duration: 0.5,
 							ease: [0.645, 0.045, 0.355, 1],
