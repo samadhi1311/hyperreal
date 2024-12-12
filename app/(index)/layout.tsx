@@ -6,6 +6,7 @@ import { motion, useScroll, useSpring } from 'motion/react';
 import MenuButton from '@/components/menu-button';
 import ScrollWidget from '@/components/ui/scroll-widget';
 import { hostGrotesk, funnelDisplay } from '@/lib/fonts/fonts';
+import Footer from '@/components/footer';
 
 export default function Layout({ children }: Readonly<{ children: React.ReactNode }>) {
 	const { scrollYProgress } = useScroll();
@@ -16,12 +17,13 @@ export default function Layout({ children }: Readonly<{ children: React.ReactNod
 	});
 
 	return (
-		<div className={`${hostGrotesk} ${funnelDisplay} antialiased`}>
+		<div className={`${hostGrotesk} ${funnelDisplay} antialiased overflow-x-hidden`}>
 			<ReactLenis root options={{ lerp: 0.25 }}>
 				<motion.div style={{ scaleX }} className='fixed left-0 right-0 top-0 z-10 h-1 origin-left bg-gradient-to-r from-violet-500 to-orange-300' />
 				<MenuButton />
 
 				{children}
+				<Footer />
 				<ScrollWidget />
 			</ReactLenis>
 		</div>
