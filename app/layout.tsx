@@ -19,7 +19,6 @@ export const metadata: Metadata = {
 	authors: [
 		{ name: 'Samadhi Gunasinghe', url: 'https://hyperreal.cloud' },
 		{ name: 'Nipuni Gamage', url: 'https://hyperreal.cloud' },
-		{ name: 'Sithruby Manoranjan', url: 'https://hyperreal.cloud' },
 	],
 	robots: {
 		index: true,
