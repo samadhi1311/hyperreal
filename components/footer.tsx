@@ -48,7 +48,7 @@ export default function Footer() {
 									<hr className='pb-2 opacity-60' />
 									<MenuItem title='Pricing' url='/pricing' />
 									<MenuItem title='Contact' url='/contact' />
-									<MenuItem title='FAQ' url='/faq' />
+									<MenuItem title='FAQ' url='/#faq' />
 								</ul>
 							</div>
 
