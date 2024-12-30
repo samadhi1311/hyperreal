@@ -2,6 +2,12 @@ import type { Metadata } from 'next';
 import type { Viewport } from 'next';
 
 import './globals.css';
+import MenuButton from '@/components/menu-button';
+import ScrollWidget from '@/components/ui/scroll-widget';
+import { hostGrotesk } from '@/lib/fonts/fonts';
+import Splash from '@/components/splash';
+import ScrollProgress from '@/components/scroll-progress';
+import Lenis from '@/components/lenis';
 
 export const viewport: Viewport = {
 	colorScheme: 'dark',
@@ -49,5 +55,17 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-	return <html lang='en'>{children}</html>;
+	return (
+		<html lang='en'>
+			<body className={`${hostGrotesk.className} antialiased overflow-x-hidden`}>
+				<Lenis>
+					<Splash />
+					<ScrollProgress />
+					<MenuButton />
+					{children}
+					<ScrollWidget />
+				</Lenis>
+			</body>
+		</html>
+	);
 }
