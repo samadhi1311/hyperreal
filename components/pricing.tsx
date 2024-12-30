@@ -19,6 +19,7 @@ function TableRow({ title, core, business }: TableRowProps) {
 		<motion.tr
 			className='border-b border-b-white/20 transition-colors duration-500 ease-in-out hover:bg-white/5'
 			initial={{ opacity: 0, y: 20 }}
+			viewport={{ once: true }}
 			whileInView={{
 				opacity: [0, 1],
 				y: [20, 0],
@@ -50,6 +51,7 @@ function PricingTable() {
 				<TableRow title='Responsive Design' core={<LuCheck className='size-5' />} business={<LuCheck className='size-5' />} />
 				<TableRow title='SEO Optimization' core={<LuCheck className='size-5' />} business={<LuCheck className='size-5' />} />
 				<TableRow title='Maintenance' core={<LuCheck className='size-5' />} business={<LuCheck className='size-5' />} />
+				<TableRow title='Contact Form' core={<LuCheck className='size-5' />} business={<LuCheck className='size-5' />} />
 				<TableRow
 					title='Custom Features'
 					core={
@@ -60,7 +62,6 @@ function PricingTable() {
 					business={<LuCheck className='size-5' />}
 				/>
 				<TableRow title='Content Management System' core={<LuX className='size-5' />} business={<LuCheck className='size-5' />} />
-				<TableRow title='Contact Form' core={<LuX className='size-5' />} business={<LuCheck className='size-5' />} />
 				<TableRow title='Payment Integration' core={<LuX className='size-5' />} business={<LuCheck className='size-5' />} />
 			</tbody>
 			<caption className='mt-8 text-left text-sm italic text-white/60'>* Some advanced features may require to upgrade to Business package</caption>
@@ -73,6 +74,7 @@ function Pricing() {
 		<Section>
 			<motion.div
 				initial={{ opacity: 0, x: -50 }}
+				viewport={{ once: true }}
 				whileInView={{
 					opacity: [0, 1],
 					x: [-50, 0],
@@ -88,6 +90,7 @@ function Pricing() {
 				<motion.div
 					className='h-full w-full'
 					initial={{ opacity: 0 }}
+					viewport={{ once: true }}
 					whileInView={{
 						opacity: [0, 1],
 						transition: {
@@ -114,6 +117,7 @@ function Pricing() {
 				<motion.div
 					className='h-full w-full'
 					initial={{ opacity: 0 }}
+					viewport={{ once: true }}
 					whileInView={{
 						opacity: [0, 1],
 						transition: {
@@ -143,6 +147,7 @@ function Pricing() {
 				<motion.div
 					className='mt-16 h-full w-full'
 					initial={{ opacity: 0 }}
+					viewport={{ once: true }}
 					whileInView={{
 						opacity: [0, 1],
 						transition: {
@@ -152,8 +157,8 @@ function Pricing() {
 					}}>
 					<Card>
 						<div className='p-8 md:p-12'>
-							<TbServerBolt className='size-16' />
-							<P1 className='mt-4 text-2xl'>
+							<TbServerBolt className='size-8' />
+							<P1 className='mt-4 text-lg'>
 								For more details on how pricing works at <span className='bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>hyperreal</span>, visit our{' '}
 								<Link href='/pricing' className='underline'>
 									pricing
