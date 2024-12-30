@@ -3,19 +3,19 @@
 import { cn } from '@/lib/utils';
 
 function H1({ children, className }: { children: React.ReactNode; className?: string }) {
-	return <h1 className={cn('funnel-display text-5xl font-semibold lg:text-8xl', className)}>{children}</h1>;
+	return <h1 className={cn('text-5xl font-semibold lg:text-8xl', className)}>{children}</h1>;
 }
 
 function H2({ children, className }: { children: React.ReactNode; className?: string }) {
-	return <h2 className={cn('funnel-display text-3xl font-medium lg:text-5xl', className)}>{children}</h2>;
+	return <h2 className={cn('text-3xl font-medium lg:text-5xl', className)}>{children}</h2>;
 }
 
 function H3({ children, className }: { children: React.ReactNode; className?: string }) {
-	return <h3 className={cn('funnel-display text-xl font-medium lg:text-3xl', className)}>{children}</h3>;
+	return <h3 className={cn('text-xl font-medium lg:text-3xl', className)}>{children}</h3>;
 }
 
 function H4({ children, className }: { children: React.ReactNode; className?: string }) {
-	return <h4 className={cn('funnel-display text-lg font-medium lg:text-xl', className)}>{children}</h4>;
+	return <h4 className={cn('text-lg lg:text-xl', className)}>{children}</h4>;
 }
 
 function P1({ children, className }: { children: React.ReactNode; className?: string }) {
