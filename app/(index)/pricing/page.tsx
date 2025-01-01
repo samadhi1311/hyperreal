@@ -22,6 +22,7 @@ export default function PricingPage() {
 			<motion.tr
 				className='border-b border-b-white/20 transition-colors duration-500 ease-in-out hover:bg-white/5'
 				initial={{ opacity: 0, y: 20 }}
+				viewport={{ once: true }}
 				whileInView={{
 					opacity: [0, 1],
 					y: [20, 0],
@@ -43,6 +44,7 @@ export default function PricingPage() {
 				<Section>
 					<motion.div
 						initial={{ opacity: 0, x: -50 }}
+						viewport={{ once: true }}
 						whileInView={{
 							opacity: [0, 1],
 							x: [-50, 0],
@@ -58,6 +60,7 @@ export default function PricingPage() {
 						<motion.div
 							className='h-full w-full'
 							initial={{ opacity: 0 }}
+							viewport={{ once: true }}
 							whileInView={{
 								opacity: [0, 1],
 								transition: {
@@ -84,6 +87,7 @@ export default function PricingPage() {
 						<motion.div
 							className='h-full w-full'
 							initial={{ opacity: 0 }}
+							viewport={{ once: true }}
 							whileInView={{
 								opacity: [0, 1],
 								transition: {
@@ -113,6 +117,7 @@ export default function PricingPage() {
 				<Section>
 					<motion.div
 						initial={{ opacity: 0, x: -50 }}
+						viewport={{ once: true }}
 						whileInView={{
 							opacity: [0, 1],
 							x: [-50, 0],
@@ -128,6 +133,7 @@ export default function PricingPage() {
 						<motion.div
 							className='h-full w-full'
 							initial={{ opacity: 0 }}
+							viewport={{ once: true }}
 							whileInView={{
 								opacity: [0, 1],
 								transition: {
@@ -150,6 +156,7 @@ export default function PricingPage() {
 						<motion.div
 							className='h-full w-full'
 							initial={{ opacity: 0 }}
+							viewport={{ once: true }}
 							whileInView={{
 								opacity: [0, 1],
 								transition: {
@@ -217,9 +224,8 @@ export default function PricingPage() {
 								<div className='p-8 md:p-12'>
 									<LuSprout className='size-16' />
 									<P1 className='mt-4 text-2xl'>
-										The Free tier can handle at least <span className='funnel-display bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>7,500</span>{' '}
-										users per month or <span className='funnel-display bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>250</span> users a day in a
-										real world scenario.
+										The Free tier can handle at least <span className=' bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>7,500</span> users per month
+										or <span className=' bg-gradient-to-tr from-violet-500 to-orange-300 bg-clip-text text-transparent'>250</span> users a day in a real world scenario.
 									</P1>
 								</div>
 							</Card>

@@ -15,6 +15,7 @@ function FeatureItem({ icon, title, description, id }: { icon: React.ReactNode; 
 			id={id}
 			className='flex flex-col gap-8 rounded-lg'
 			initial={{ opacity: 0, y: 50 }}
+			viewport={{ once: true }}
 			whileInView={{
 				opacity: [0, 1],
 				y: [50, 0],
@@ -38,6 +39,7 @@ export default function Features() {
 		<Section>
 			<motion.div
 				initial={{ opacity: 0, x: -50 }}
+				viewport={{ once: true }}
 				whileInView={{
 					opacity: [0, 1],
 					x: [-50, 0],

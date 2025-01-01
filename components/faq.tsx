@@ -51,8 +51,10 @@ function FAQItem({ question, answer }: FAQItemProps) {
 
 	return (
 		<motion.div className='mx-auto w-full transition-all duration-500 ease-in-out'>
-			<button className='flex w-full cursor-pointer items-center justify-between' onClick={() => setIsOpen(!isOpen)}>
-				<H4 className='cursor-pointer'>{question}</H4>
+			<button className='flex h-full w-full cursor-pointer items-center justify-between' onClick={() => setIsOpen(!isOpen)}>
+				<div className='flex w-full items-start justify-start'>
+					<H4 className='cursor-pointer text-left'>{question}</H4>
+				</div>
 				<motion.span
 					animate={{
 						rotate: isOpen ? 180 : 0,
@@ -67,7 +69,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
 				{isOpen && (
 					<motion.div {...answerAnimation}>
 						<div className='pb-4 pt-2'>
-							<motion.p className='text-pretty text-sm text-white/60 md:text-base' {...paragraphAnimation}>
+							<motion.p className='text-pretty text-sm text-white/80 md:text-base' {...paragraphAnimation}>
 								{answer}
 							</motion.p>
 						</div>
@@ -85,6 +87,7 @@ export default function FAQ() {
 				<motion.div
 					className='w-full space-y-4'
 					initial={{ opacity: 0, x: -50 }}
+					viewport={{ once: true }}
 					whileInView={{
 						opacity: [0, 1],
 						x: [-50, 0],
@@ -99,6 +102,7 @@ export default function FAQ() {
 				<motion.div
 					className='w-full space-y-8 opacity-0'
 					initial={{ opacity: 0, y: 50 }}
+					viewport={{ once: true }}
 					whileInView={{
 						opacity: [0, 1],
 						y: [50, 0],
@@ -119,7 +123,7 @@ export default function FAQ() {
 
 					<FAQItem
 						question='Will you host my website?'
-						answer='Absolutely, with free pricing tier that is sufficient for small to medium scale businesses. We offer fast, reliable hosting services to give your website maximum speed and uptime. Learn more about our hosting services.'
+						answer='Absolutely, with included starter pricing tier that is sufficient for small to medium scale businesses. We offer fast, reliable hosting services to give your website maximum speed and uptime. Visit pricing page to learn more about our hosting services.'
 					/>
 
 					<FAQItem
