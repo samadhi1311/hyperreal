@@ -6,6 +6,7 @@ import FAQ from '@/components/faq';
 import Hero from '@/components/hero';
 import { Pricing } from '@/components/pricing';
 import Footer from '@/components/footer';
+import TechStack from '@/components/tech-stack';
 
 export default function Home() {
 	return (
@@ -15,6 +16,7 @@ export default function Home() {
 				<Features />
 				<Pricing />
 				<FAQ />
+				<TechStack />
 			</PageWrapper>
 			<Footer />
 		</>
