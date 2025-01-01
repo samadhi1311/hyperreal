@@ -3,14 +3,14 @@
 import Footer from '@/components/footer';
 import PageWrapper from '@/components/ui/page-wrapper';
 import Section from '@/components/ui/section';
-import { H2, H3, P1, P2 } from '@/components/ui/typography';
+import { H2, H3, P2 } from '@/components/ui/typography';
 
 export default function TermsConditions() {
 	function ConditionItem({ title, description }: { title: React.ReactNode; description: React.ReactNode }) {
 		return (
 			<div className='mt-4 flex flex-col gap-2'>
 				<H3>{title}</H3>
-				<P1 className='text-pretty text-justify'>{description}</P1>
+				<P2 className='text-pretty text-justify'>{description}</P2>
 			</div>
 		);
 	}
@@ -30,7 +30,7 @@ export default function TermsConditions() {
 						<div className='mt-16 space-y-8'>
 							<ConditionItem
 								title='01. Introduction'
-								description='Welcome to hyperreal. By accessing or using our services, you agree to comply with these Terms and Conditions. Please read them carefully before engaging with us for any project or service.'
+								description="Welcome to 'hyperreal'. By accessing or using our services, you agree to comply with these Terms and Conditions. Please read them carefully before engaging with us for any project or service."
 							/>
 
 							<ConditionItem
@@ -88,8 +88,8 @@ export default function TermsConditions() {
 								description={
 									<span>
 										If you have questions about these Terms and Conditions, please reach out to us at{' '}
-										<a href='mailto:hyperreal89@gmail.com' className='underline'>
-											hyperreal89@gmail.com
+										<a href='mailto:hello@hyperreal.cloud' className='underline'>
+											hello@hyperreal.cloud
 										</a>
 										.
 									</span>
