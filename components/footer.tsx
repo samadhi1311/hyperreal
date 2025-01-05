@@ -47,7 +47,7 @@ export default function Footer() {
 									<P3>Important Links</P3>
 									<hr className='pb-2 opacity-60' />
 									<MenuItem title='Pricing' url='/pricing' />
-									<MenuItem title='Contact' url='/contact' />
+									<MenuItem title='Contact' url='/about#contact' />
 									<MenuItem title='FAQ' url='/#faq' />
 								</ul>
 							</div>
