@@ -76,7 +76,7 @@ export default function About() {
 						</div>
 					</div>
 				</Section> */}
-				<span id='contact'></span>
+				<span id='contact' className='absolute bottom-16 opacity-0'></span>
 				<Section>
 					<H2>Contact us</H2>
 					<div className='grid grid-cols-1 gap-8 py-16 md:grid-cols-2'>
