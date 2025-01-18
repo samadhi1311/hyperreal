@@ -16,25 +16,15 @@ export default function Work() {
 					<P1>Checkout some of the projects we have worked on.</P1>
 				</Section>
 				<Section>
-					<WorkItem
-						title='Hari Builders (Pvt) Ltd.'
-						description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem.'
-						video='/haribuilders.mp4'
-						url='https://haribuilders.lk'
-					/>
+					<WorkItem title='Hari Builders (Pvt) Ltd.' description='A primier construction company based in Sri Lanka since 2011.' video='/haribuilders.mp4' url='https://haribuilders.lk' />
 				</Section>
 
 				<Section>
-					<WorkItem title='COLORSPECK' description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem.' video='/colorspeck.mp4' url='https://colorspeck.lk' />
+					<WorkItem title='COLORSPECK' description='COLORSPECK sells handcrafts worldwide.' video='/colorspeck.mp4' url='https://colorspeck.lk' />
 				</Section>
 
 				<Section>
-					<WorkItem
-						title='hyperbooks.'
-						description='Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, quidem.'
-						video='/hyperbooks.mp4'
-						url='https://hyperbooks.hyperreal.cloud'
-					/>
+					<WorkItem title='hyperbooks.' description='A platform to manage and export your invoices beautifully.' video='/hyperbooks.mp4' url='https://hyperbooks.hyperreal.cloud' />
 				</Section>
 			</PageWrapper>
 			<Footer />
