@@ -20,12 +20,12 @@ const answerAnimation = {
 	animate: {
 		height: 'auto',
 		opacity: 1,
-		transition: { duration: 0.5, ease: 'easeOut' },
+		transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1] },
 	},
 	exit: {
 		height: 0,
 		opacity: 0,
-		transition: { duration: 0.5, ease: 'easeIn' },
+		transition: { duration: 0.5, ease: [0.645, 0.045, 0.355, 1] },
 	},
 };
 
@@ -60,7 +60,7 @@ function FAQItem({ question, answer }: FAQItemProps) {
 						rotate: isOpen ? 180 : 0,
 						scale: isOpen ? 1.1 : 1,
 					}}
-					transition={{ duration: 0.3 }}
+					transition={{ duration: 0.3, ease: [0.645, 0.045, 0.355, 1] }}
 					className='flex-shrink-0'>
 					<FaChevronDown className='h-4 w-4' />
 				</motion.span>
