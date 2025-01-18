@@ -11,8 +11,12 @@ body {
 	font-family: var(--font-inter);
 	font-optical-sizing: auto;
 	font-style: normal;
-	letter-spacing: 0.25px;
+	letter-spacing: 0.1px;
 	font-weight: 400;
+}
+
+.font-display {
+	font-family: var(--font-hostGrotesk);
 }
 
 .grains {

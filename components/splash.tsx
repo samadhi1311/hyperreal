@@ -100,9 +100,9 @@ export default function Splash() {
 			<div className='flex flex-col items-center justify-center gap-16 md:max-w-min'>
 				<span className='logo-container flex items-center gap-8 overflow-clip opacity-0'>
 					<img className='hyperreal-logo h-8 w-8 max-w-none scale-[1.06] md:h-16 md:w-16' src='/hyperreal.svg' loading='lazy' width={32} height={32} alt='hyperreal logo' />
-					<h1 className='hyperreal-heading  flex items-center text-5xl font-medium leading-none text-white md:text-8xl'>
+					<h1 className='hyperreal-heading flex items-center text-5xl font-medium leading-none text-white md:text-8xl'>
 						{Array.from('hyperreal').map((letter, index) => (
-							<motion.span className='hyperreal-heading-letter pb-2 opacity-0' key={index}>
+							<motion.span className='hyperreal-heading-letter font-display pb-2 opacity-0' key={index}>
 								{letter}
 							</motion.span>
 						))}

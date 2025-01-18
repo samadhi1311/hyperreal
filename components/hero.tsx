@@ -25,7 +25,7 @@ export default function Hero() {
 	return (
 		<section className='flex min-h-svh w-full flex-col items-center justify-center gap-8'>
 			<div className='z-50 mx-auto grid h-[50vh] max-w-screen-2xl grid-cols-1 place-items-center px-8 md:px-16 lg:grid-cols-3 2xl:px-0'>
-				<div className='flex flex-col gap-4 lg:col-span-2 lg:gap-12'>
+				<div className='font-display flex flex-col gap-4 font-normal lg:col-span-2 lg:gap-12'>
 					<img src='/hyperreal.svg' alt='Hyperreal Logo' width={64} height={64} className='h-16 w-16' fetchPriority='high' rel='preload' />
 					<h1 className='text-3xl leading-none md:text-5xl xl:text-7xl'>
 						We craft <span className='bg-gradient-to-br from-violet-600 to-orange-300 bg-clip-text text-transparent'>creative</span> and{' '}
