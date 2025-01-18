@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang='en'>
-			<body className={`${hostGrotesk.className} ${inter.variable} antialiased overflow-x-hidden`}>
+			<body className={`${hostGrotesk.variable} ${inter.variable} antialiased overflow-x-hidden`}>
 				<Lenis>
 					<Splash />
 					<ScrollProgress />
