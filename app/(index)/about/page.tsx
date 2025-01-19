@@ -3,12 +3,8 @@
 import PageWrapper from '@/components/ui/page-wrapper';
 import ParallaxLogo from '@/components/parallax-logo';
 import Section from '@/components/ui/section';
-import { H1, H2, H3, P1, P2 } from '@/components/ui/typography';
-import { LuSend } from 'react-icons/lu';
+import { H1, H2, P1, P2 } from '@/components/ui/typography';
 import Footer from '@/components/footer';
-// import { Card } from '@/components/card';
-// import { LuCode2 } from 'react-icons/lu';
-// import { LuPaintbrush } from 'react-icons/lu';
 
 export default function About() {
 	return (
@@ -76,39 +72,6 @@ export default function About() {
 						</div>
 					</div>
 				</Section> */}
-				<span id='contact' className='absolute bottom-16 opacity-0'></span>
-				<Section>
-					<H2>Contact us</H2>
-					<div className='grid grid-cols-1 gap-8 py-16 md:grid-cols-2'>
-						<div className='flex max-w-lg flex-col justify-between leading-relaxed'>
-							<div>
-								<H3>
-									Tell us your idea, and we will sent you a <span className='bg-gradient-to-br from-violet-600 to-orange-400 bg-clip-text text-transparent'>project proposal</span>.
-								</H3>
-								<H3>
-									Better yet, Text us on WhatsApp,
-									<br />
-									<span className='bg-gradient-to-br from-violet-600 to-orange-400 bg-clip-text text-transparent'>+94 78 275 2500</span>
-								</H3>
-							</div>
-						</div>
-						<div className='rounded-lg border border-white/10 p-4 md:p-6 lg:p-8'>
-							<form className='flex flex-col gap-8'>
-								<div className='grid grid-cols-2 gap-4'>
-									<input type='text' placeholder='First name' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
-									<input type='text' placeholder='Last name' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
-								</div>
-								<input type='email' placeholder='Your Email' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
-								<input type='email' placeholder='Subject' className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
-								<textarea placeholder='Message' rows={4} className='rounded-lg border border-white/10 bg-transparent px-4 py-2 placeholder:text-white/60' />
-								<button className='flex w-fit items-center gap-3 self-end rounded-lg border border-white/10 bg-white/10 px-4 py-2 duration-500 hover:bg-white/20'>
-									<LuSend className='size-4' />
-									Submit
-								</button>
-							</form>
-						</div>
-					</div>
-				</Section>
 			</PageWrapper>
 
 			<Footer />
