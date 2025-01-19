@@ -32,7 +32,7 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 
 	const MenuItem = ({ title, url, newTab }: { title: string; url: string; newTab?: boolean }) => {
 		return (
-			<motion.li initial='initial' whileHover='hover' animate='animate' className='h-16 w-fit rounded-full capitalize opacity-0'>
+			<motion.li initial='initial' whileHover='hover' animate='animate' className='h-16 w-fit rounded-full opacity-0'>
 				<Link target={newTab ? '_blank' : '_self'} rel={newTab ? 'noopener noreferrer' : ''} href={url} className='flex h-16 flex-col gap-10 overflow-hidden md:gap-16' onClick={closeMenu}>
 					<motion.span variants={menuItemText} className='py-2'>
 						{title}
@@ -67,8 +67,8 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Contact us</P3>
 					<hr className='mb-4 border-white opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
 					<ul className='flex flex-row gap-16 md:flex-col'>
-						<MenuItem newTab title='whatsapp' url='https://wa.me/94782752500' />
-						<MenuItem title='email' url='mailto:hello@hyperreal.cloud' />
+						<MenuItem newTab title='Whatsapp' url='https://wa.me/94782752500' />
+						<MenuItem title='Email' url='mailto:hello@hyperreal.cloud' />
 					</ul>
 				</div>
 
@@ -76,9 +76,9 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Socials</P3>
 					<hr className='mb-4 border-white opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
 					<ul className='flex flex-row gap-16 md:flex-col'>
-						<MenuItem newTab title='instagram' url='https://www.instagram.com/hyperrealhq' />
-						<MenuItem newTab title='facebook' url='https://www.facebook.com/hyperrealhq' />
-						<MenuItem newTab title='linkedin' url='https://www.linkedin.com/company/hyperrealhq/' />
+						<MenuItem newTab title='Instagram' url='https://www.instagram.com/hyperrealhq' />
+						<MenuItem newTab title='Facebook' url='https://www.facebook.com/hyperrealhq' />
+						<MenuItem newTab title='LinkedIn' url='https://www.linkedin.com/company/hyperrealhq/' />
 					</ul>
 				</div>
 			</motion.nav>
