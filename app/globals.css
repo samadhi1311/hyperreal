@@ -8,7 +8,7 @@ body {
 	background-color: black;
 	scrollbar-width: none;
 
-	font-family: var(--font-inter);
+	font-family: var(--font-sans);
 	font-optical-sizing: auto;
 	font-style: normal;
 	letter-spacing: 0.1px;
@@ -16,7 +16,7 @@ body {
 }
 
 .font-display {
-	font-family: var(--font-hostGrotesk);
+	font-family: var(--font-display);
 }
 
 .grains {

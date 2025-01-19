@@ -4,7 +4,7 @@ import type { Viewport } from 'next';
 import './globals.css';
 import MenuButton from '@/components/menu-button';
 import ScrollWidget from '@/components/ui/scroll-widget';
-import { hostGrotesk, inter } from '@/lib/fonts/fonts';
+import { display, sans } from '@/lib/fonts/fonts';
 import Splash from '@/components/splash';
 import ScrollProgress from '@/components/scroll-progress';
 import Lenis from '@/components/lenis';
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
 	return (
 		<html lang='en'>
-			<body className={`${hostGrotesk.variable} ${inter.variable} antialiased overflow-x-hidden`}>
+			<body className={`${display.variable} ${sans.variable} antialiased overflow-x-hidden`}>
 				<Lenis>
 					<Splash />
 					<ScrollProgress />
