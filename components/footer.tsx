@@ -35,7 +35,7 @@ export default function Footer() {
 							<div className='flex items-start justify-center'>
 								<ul className='w-[200px] space-y-2'>
 									<P3>Main Links</P3>
-									<hr className='pb-2 opacity-60' />
+									<hr className='border-white pb-2 opacity-60' />
 									<MenuItem title='Home' url='/' />
 									<MenuItem title='Work' url='/work' />
 									<MenuItem title='About' url='/about' />
@@ -45,7 +45,7 @@ export default function Footer() {
 							<div className='flex items-start justify-center'>
 								<ul className='w-[200px] space-y-2'>
 									<P3>Important Links</P3>
-									<hr className='pb-2 opacity-60' />
+									<hr className='border-white pb-2 opacity-60' />
 									<MenuItem title='Pricing' url='/pricing' />
 									<MenuItem title='Contact' url='/about#contact' />
 									<MenuItem title='FAQ' url='/#faq' />
@@ -55,7 +55,7 @@ export default function Footer() {
 							<div className='flex items-start justify-center'>
 								<ul className='w-full min-w-[120px] max-w-[200px] space-y-2'>
 									<P3>Legal</P3>
-									<hr className='pb-2 opacity-60' />
+									<hr className='border-white pb-2 opacity-60' />
 									<MenuItem title='Terms and Conditions' url='/terms-and-conditions' />
 									<MenuItem title='Privacy Policy' url='/privacy-policy' />
 								</ul>
@@ -64,7 +64,7 @@ export default function Footer() {
 							<div className='flex items-start justify-center'>
 								<ul className='w-[200px] space-y-2'>
 									<P3>Socials</P3>
-									<hr className='pb-2 opacity-60' />
+									<hr className='border-white pb-2 opacity-60' />
 									<MenuItem title='Instagram' url='/' />
 									<MenuItem title='Facebook' url='/' />
 								</ul>

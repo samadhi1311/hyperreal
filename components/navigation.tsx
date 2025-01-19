@@ -54,7 +54,7 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 				<PiArrowRight className='absolute h-8 w-8 opacity-0 transition-all duration-500 group-hover/link:opacity-100' />
 				<div className='group/section'>
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Our website</P3>
-					<hr className='mb-4 origin-top-left opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
+					<hr className='mb-4 origin-top-left border-white opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
 					<ul className='flex flex-row gap-16 md:flex-col'>
 						<MenuItem title='Home' url='/' />
 						<MenuItem title='Work' url='/work' />
@@ -65,7 +65,7 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 
 				<div className='group/section'>
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Contact us</P3>
-					<hr className='mb-4 opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
+					<hr className='mb-4 border-white opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
 					<ul className='flex flex-row gap-16 md:flex-col'>
 						<MenuItem newTab title='whatsapp' url='https://wa.me/94782752500' />
 						<MenuItem title='email' url='mailto:hello@hyperreal.cloud' />
@@ -74,7 +74,7 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 
 				<div className='group/section'>
 					<P3 className='mb-1 opacity-50 transition-opacity duration-500 group-hover/section:opacity-80'>Socials</P3>
-					<hr className='mb-4 opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
+					<hr className='mb-4 border-white opacity-20 transition-opacity duration-500 group-hover/section:opacity-60 md:mb-16' />
 					<ul className='flex flex-row gap-16 md:flex-col'>
 						<MenuItem newTab title='instagram' url='https://www.instagram.com/hyperrealhq' />
 						<MenuItem newTab title='facebook' url='https://www.facebook.com/hyperrealhq' />
