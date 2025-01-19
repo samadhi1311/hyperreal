@@ -8,8 +8,9 @@ import { PiHandHeartBold } from 'react-icons/pi';
 import { AiOutlineCloudServer } from 'react-icons/ai';
 import Section from '@/components/ui/section';
 import { H2, H3, P2, P4 } from '@/components/ui/typography';
+import { cn } from '@/lib/utils';
 
-function FeatureItem({ icon, title, description, id }: { icon: React.ReactNode; title: string; description: string; id: string }) {
+function FeatureItem({ icon, title, description, id, background }: { icon: React.ReactNode; title: string; description: string; id: string; background: string }) {
 	return (
 		<motion.div
 			id={id}
@@ -24,7 +25,7 @@ function FeatureItem({ icon, title, description, id }: { icon: React.ReactNode; 
 					ease: [0.645, 0.045, 0.355, 1],
 				},
 			}}>
-			<span className='flex size-8 items-center justify-center rounded-full bg-white md:size-12'>{icon}</span>
+			<span className={cn('flex size-8 items-center justify-center rounded-full bg-gradient-to-br md:size-12', background)}>{icon}</span>
 
 			<div className='flex flex-col gap-2'>
 				<H3 className='md:mb-2'>{title}</H3>
@@ -56,35 +57,40 @@ export default function Features() {
 			<div className='mx-auto mt-8 grid gap-x-24 gap-y-16 md:grid-cols-2 lg:mt-16'>
 				<FeatureItem
 					id='1'
-					icon={<GrTechnology className='size-6 text-black md:size-8' />}
+					icon={<GrTechnology className='size-6 text-white md:size-8' />}
+					background='from-red-600 to-red-400'
 					title='Custom-Built Digital Destinations'
 					description='From simple, elegant static sites to dynamic, full-fledged e-commerce platforms, we bring your vision to life with custom web development tailored to your business needs.'
 				/>
 
 				<FeatureItem
 					id='2'
-					icon={<GrFingerPrint className='size-6 text-black md:size-8' />}
+					icon={<GrFingerPrint className='size-6 text-white md:size-8' />}
+					background='from-violet-700 to-violet-400'
 					title='Unique Web Design'
 					description='Stand out from the crowd with our creative, one-of-a-kind web designs. We craft visually stunning, user-friendly sites that reflect your brand’s personality and values.'
 				/>
 
 				<FeatureItem
 					id='3'
-					icon={<LuSparkles className='size-6 text-black md:size-8' />}
+					icon={<LuSparkles className='size-6 text-white md:size-8' />}
+					background='from-emerald-600 to-emerald-400'
 					title='Tailored Brand Identity'
 					description='Beyond web design, we work with you to enhance and strengthen your brand identity, ensuring your online presence is both memorable and impactful.'
 				/>
 
 				<FeatureItem
 					id='4'
-					icon={<PiHandHeartBold className='size-6 text-black md:size-8' />}
+					icon={<PiHandHeartBold className='size-6 text-white md:size-8' />}
+					background='from-pink-700 to-pink-400'
 					title='Lifetime Support and Maintenance'
 					description='Our commitment doesn’t end at launch. We provide lifetime support to keep your website updated, secure, and running smoothly, so you can focus on your business.'
 				/>
 
 				<FeatureItem
 					id='5'
-					icon={<AiOutlineCloudServer className='size-7 text-black md:size-10' />}
+					icon={<AiOutlineCloudServer className='size-7 text-white md:size-10' />}
+					background='from-orange-600 to-orange-400'
 					title='Fast, Reliable Hosting'
 					description='We host your website on our high-speed servers to ensure fast load times, maximum uptime and ultimate security, giving your visitors a seamless browsing experience.'
 				/>
