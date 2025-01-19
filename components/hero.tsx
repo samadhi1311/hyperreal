@@ -33,7 +33,7 @@ export default function Hero() {
 						<span className='bg-gradient-to-r from-red-500 to-pink-400 bg-clip-text text-transparent'>love</span>.
 					</h1>
 					<div className='flex w-full items-start justify-start'>
-						<Link href='/about#contact'>
+						<Link href='/contact'>
 							<ShimmerButton>Get in touch</ShimmerButton>
 						</Link>
 					</div>

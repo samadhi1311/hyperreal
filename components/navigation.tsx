@@ -58,6 +58,7 @@ export default function Navigation({ closeMenu }: { closeMenu: () => void }) {
 					<ul className='flex flex-row gap-16 md:flex-col'>
 						<MenuItem title='Home' url='/' />
 						<MenuItem title='Work' url='/work' />
+						<MenuItem title='Contact' url='/contact' />
 						<MenuItem title='About' url='/about' />
 					</ul>
 				</div>
